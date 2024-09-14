@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .navbar {
@@ -398,5 +400,74 @@ img {
 
     .card-title {
         font-size: 1rem;
+    }
+}
+
+/* 添加以下新样式 */
+@media (max-width: 768px) {
+    .education-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-date {
+        margin-bottom: 10px;
+    }
+
+    .education-content h3 {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
+
+    .education-content ul {
+        padding-left: 20px;
+    }
+
+    .education-content li {
+        font-size: 0.9rem;
+    }
+}
+
+/* 确保所有文本都能自动换行 */
+body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 调整卡片样式以适应移动设备 */
+@media (max-width: 768px) {
+    .card-container {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .tags .tag {
+        font-size: 0.8rem;
+        margin: 2px;
+    }
+}
+
+/* 调整技能部分的样式 */
+@media (max-width: 768px) {
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill-item {
+        font-size: 0.9rem;
+        margin: 5px;
     }
 }
