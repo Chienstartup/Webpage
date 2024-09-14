@@ -103,7 +103,7 @@ body {
 }
 
 .education-content h3, .experience-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #0056b3;
     white-space: normal;
@@ -111,6 +111,7 @@ body {
     text-overflow: clip;
     word-wrap: break-word;
     max-width: 100%;
+    line-height: 1.4;
 }
 
 .education-content ul, .experience-content p {
@@ -331,7 +332,36 @@ body {
 
     /* Adjust navbar for mobile */
     .navbar-nav {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #navbarNav {
+        display: none;
+        width: 100%;
+    }
+
+    #navbarNav.show {
+        display: flex;
+    }
+
+    .nav-item {
+        width: auto;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
     }
 
     /* Make about section stack on mobile */
@@ -483,25 +513,29 @@ body {
 
 /* 修改 education 和 experience 標題樣式 */
 .education-content h3, .experience-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #0056b3;
-    white-space: normal; /* 允許換行 */
-    overflow: visible; /* 移除溢出隱藏 */
-    text-overflow: clip; /* 移除省略號 */
-    word-wrap: break-word; /* 確保長單詞也能換行 */
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    word-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.4;
 }
 
 /* 調整導航欄在移動端的樣式 */
 @media (max-width: 768px) {
     .navbar-nav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
     }
 
     .navbar-toggler {
         display: block;
+        margin-bottom: 10px;
     }
 
     #navbarNav {
@@ -511,17 +545,18 @@ body {
 
     #navbarNav.show {
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .nav-item {
-        width: 100%;
+        width: auto;
         text-align: center;
+        margin: 5px;
     }
 
     .nav-link {
-        padding: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
     }
 }
 
@@ -529,5 +564,20 @@ body {
 @media (min-width: 769px) {
     #navbarNav {
         display: flex !important;
+    }
+}
+
+/* 調整 education 和 experience 項目在移動端的佈局 */
+@media (max-width: 768px) {
+    .education-item, .experience-item {
+        flex-direction: column;
+    }
+
+    .education-date, .experience-date {
+        margin-bottom: 10px;
+    }
+
+    .education-content, .experience-content {
+        width: 100%;
     }
 }
