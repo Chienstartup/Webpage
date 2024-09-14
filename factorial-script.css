@@ -284,7 +284,6 @@ body {
     right: 1rem;
 }
 
-
 /* 可选：调整按钮大小和样式 */
 .btn {
     padding: 0.375rem 0.75rem;
@@ -305,4 +304,99 @@ body {
     border-radius: 12px;
     font-size: 0.75rem;
     font-weight: 600;
+}
+
+/* Add these responsive styles at the end of the file */
+
+/* General responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust navbar for mobile */
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    /* Make about section stack on mobile */
+    #about .row {
+        flex-direction: column;
+    }
+
+    #about .col-md-3,
+    #about .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    /* Adjust education and experience items for mobile */
+    .education-item,
+    .experience-item {
+        flex-direction: column;
+    }
+
+    .education-date,
+    .experience-date,
+    .education-content,
+    .experience-content {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+
+    /* Make cards full width on mobile */
+    #aiml-projects .col-md-4,
+    #data-analytics-projects .col-md-4,
+    #business-projects .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Adjust card height for mobile */
+    .card-container {
+        height: auto;
+    }
+
+    /* Adjust button positioning for mobile */
+    .card-body .btn {
+        position: static;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .card-body {
+        padding-bottom: 1rem;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust font sizes for better readability on small screens */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .education-content h3,
+    .experience-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
 }
