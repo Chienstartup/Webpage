@@ -96,23 +96,30 @@ body {
 }
 
 .education-content, .experience-content {
-    flex: 0 0 70%;
+    overflow: visible;
+    white-space: normal;
+    text-overflow: clip;
+    word-wrap: break-word;
 }
 
 .education-content h3, .experience-content h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #0056b3;
-    white-space: normal; /* 允許換行 */
-    overflow: visible; /* 移除溢出隱藏 */
-    text-overflow: clip; /* 移除省略號 */
-    word-wrap: break-word; /* 確保長單詞也能換行 */
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 .education-content ul, .experience-content p {
     padding-left: 1.2rem;
     margin-bottom: 1rem;
     font-size: 1.0rem;
+    white-space: normal;
+    overflow: visible;
+    word-wrap: break-word;
 }
 
 .education-extra {
@@ -350,6 +357,7 @@ body {
     .education-content,
     .experience-content {
         flex: 0 0 100%;
+        max-width: 100%;
         padding-right: 0;
     }
 
