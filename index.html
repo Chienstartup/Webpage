@@ -12,9 +12,21 @@
             document.querySelectorAll('.view-only-link').forEach(link => {
                 link.addEventListener('contextmenu', (e) => e.preventDefault());
                 link.addEventListener('dragstart', (e) => e.preventDefault());
+                link.addEventListener('selectstart', (e) => e.preventDefault());
+                link.addEventListener('copy', (e) => e.preventDefault());
+                link.addEventListener('cut', (e) => e.preventDefault());
+                link.addEventListener('paste', (e) => e.preventDefault());
             });
         });
     </script>
+    <style>
+        .no-copy {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -157,7 +169,7 @@
                                 </div>
                                 <h5 class="card-title">Time Series Prediction for Stock Market</h5>
                                 <p class="card-text">Conducting new ML methods on customer's proprietary data to improve returns. (under NDA)</p>
-                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/Poster.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary view-only-link">Poster</a>
+                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/Poster.pdf&embedded=true" target="_blank" rel="noopener noreferrer" class="btn btn-secondary view-only-link no-copy" oncontextmenu="return false;">Poster</a>
                   
                             </div>
                         </div>
@@ -184,7 +196,7 @@
                                     </div>
                                     <h5 class="card-title">Tuna Economics and its Sustainability</h5>
                                     <p class="card-text">Utilizing visualization library, Altair, to conduct exploratory data analysis on ICCAT tuna datasets to discuss the major problems on tuna catch.</p>
-                                    <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/Report.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link">See More</a>
+                                    <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/Report.pdf&embedded=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link no-copy" oncontextmenu="return false;">See More</a>
                                     <a href="https://github.com/Chienstartup/Tuna-Economics-and-its-Sustainability" class="btn btn-secondary">GitHub</a>
                                 </div>
                             </div>
@@ -203,7 +215,7 @@
                                     <h5 class="card-title">Better to Solve Consumers' Complaints</h5>
                                     <p class="card-text">We aims to tackle the increase volume of complaints and the complexities involved
                                         in addressing them within the finance area.</p>
-                                    <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/Milestone2.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link">See More</a>
+                                    <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/Milestone2.pdf&embedded=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link no-copy" oncontextmenu="return false;">See More</a>
                                     <a href="https://github.com/f23-milestone2-team10/repo_cfpb" class="btn btn-secondary">GitHub</a>
                                 </div>
                             </div>
@@ -221,7 +233,7 @@
                                     </div>
                                     <h5 class="card-title">PowerBI Dashboard for Sales</h5>
                                     <p class="card-text">Utilizing PowerBI to conduct ETL India company's sales data and build dashboard to guide sales performance.</p>
-                                    <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/dashboard.pptx" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link">Dashboard</a>
+                                    <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/dashboard.pptx&embedded=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link no-copy" oncontextmenu="return false;">Dashboard</a>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +258,7 @@
                                 </div>
                                 <h5 class="card-title">Marketing Strategy with Data Analytics</h5>
                                 <p class="card-text">Utilizing web scraping and data analytics to help Breitling plan marketing strategy ahead for its new marketing campaign.</p>
-                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/breit.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link">See More</a>
+                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/breit.pdf&embedded=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link no-copy" oncontextmenu="return false;">See More</a>
                             </div>
                         </div>
                     </div>
@@ -264,7 +276,7 @@
                                 </div>
                                 <h5 class="card-title">Go-to-market Strategy</h5>
                                 <p class="card-text">Partnering with medical device start-up and help them select target market with potential and provide them with strategies.</p>
-                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/ED.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link">See More</a>
+                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/ED.pdf&embedded=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link no-copy" oncontextmenu="return false;">See More</a>
                             </div>
                         </div>
                     </div>
@@ -281,7 +293,7 @@
                                 </div>
                                 <h5 class="card-title">Business Plan for Selected SEA Country</h5>
                                 <p class="card-text">Establishing assessment score card for SEA countries and formulate country entering business plan.</p>
-                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/lena.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link">See More</a>
+                                <a href="https://docs.google.com/viewer?url=https://github.com/Chienstartup/YHC_portfolio/raw/main/projects/lena.pdf&embedded=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-only-link no-copy" oncontextmenu="return false;">See More</a>
                             </div>
                         </div>
                     </div>
