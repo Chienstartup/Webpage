@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yi-Hsin Chien's Portfolio</title>
+    <link rel="stylesheet" href="factorial-script.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yi-Hsin Chien's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aiml-projects">AI/ML</a></li>
+                    <a class="nav-link" href="#data-analytics-projects">Analytics</a>
+                    <li class="nav-item"><a class="nav-link" href="#business-projects">Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" role="main">
+        <section id="about" class="section py-5">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/about/portfolio_picture.jpg" alt="Your Name" class="img-fluid rounded">
+                </div>
+                <div class="col-md-9">
+                    <p class="about-text">
+                        As a recent Master's graduate in Applied Data Science, I bring a robust skill set in data science, showcased through my work on supervised learning for marketing projects and fine-tuning large language models (LLMs), where I earned a bronze medal in a Kaggle competition. With over 6 years of experience as a professional pharmacist and project manager in the pharmaceutical and biotech industries, I have a proven track record in business development, commercial strategy, and management. This unique combination of data science expertise and industry experience makes me a versatile and valuable asset.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="education" class="section py-5 gray-background">
+        <div class="container">
+            <h2 class="section-title">Education</h2>   
+            <div class="education-item">
+                <div class="education-date">AUG 2021 – MAY 2024</div>
+                <div class="education-content">
+                    <h3>Master of Applied Data Science, University of Michigan, USA</h3>
+                    <ul>
+                        <li>GPA: 3.97 / 4.00</li>
+                        <li>Kaggle Competition - AI Mathematical Olympiad - Bronze Medalist</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-date">JUL 2019 – JAN 2021</div>
+                <div class="education-content">
+                    <h3>MBA, Nanyang Business School, Nanyang Technological University, Singapore</h3>
+                    <ul>
+                        <li>Nanyang Diversity Leader Scholarship</li>
+                        <li>Business Plan Competition - 3rd Runner-Up</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-date">JUL 2019 – SEP 2020</div>
+                <div class="education-content">
+                    <h3>MBA, WASEDA Business School, WASEDA University, Japan</h3>
+                    <ul>
+                        <li>WASEDA Business School - Distinguished Student</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-date">SEP 2009 – JUN 2013</div>
+                <div class="education-content">
+                    <h3>Bachelor's degree of Pharmacy, China Medical University, Taiwan</h3>
+                    <ul>
+                        <li>National Certificate Pharmacist</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 其他教育经历项 -->
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="aiml-projects" class="section py-5">
+            <h2 class="section-title">Real-Life AI/ML Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/projects/AIMO.jpg" class="card-img-top" alt="AI Mathematical Olympiad">
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag">Kaggle</span>
+                                    <span class="tag">LLMs</span>
+                                    <span class="tag">PEFT</span>
+                                    <span class="tag">QLoRA</span>
+                                    <span class="tag">IA3</span>
+                                    <span class="tag">p-tuning</span>
+                                </div>
+                                <h5 class="card-title">2024 AI Mathematical Olympiad</h5>
+                                <p class="card-text">Fine tuning SOTA models and apply parameters efficient fine tuning (PEFT) to solve mathematical problems.</p>
+                                <!-- <a href="#" class="btn btn-primary">See More</a> -->
+                                <a href="https://github.com/Chienstartup/2024-AI-Mathematical-Olympiad" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/projects/ISIC.jpg" class="card-img-top" alt="ISIC 2024 - Skin Cancer Detection">
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag">Kaggle</span>
+                                    <span class="tag">CNNs</span>
+                                    <span class="tag">Imagenet</span>
+                                    <span class="tag">GBMs</span>
+                                    <span class="tag">Ensembling</span>
+                                </div>
+                                <h5 class="card-title">ISIC 2024 - Skin Cancer Detection</h5>
+                                <p class="card-text">Training classifier with both pretrained Imagenet models on low resolution 3D-TBP pictures and tabular meta data.</p>
+                                <!-- <a href="#" class="btn btn-primary">See More</a> -->
+                                <a href="https://github.com/Chienstartup/ISIC_2024/tree/main" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/projects/HBM.jpg" class="card-img-top" alt="Time Series Prediction for Stock Market">
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag">Quant</span>
+                                    <span class="tag">Time Series</span>
+                                    <span class="tag">PCA</span>
+                                    <span class="tag">Regression</span>
+                                </div>
+                                <h5 class="card-title">Time Series Prediction for Stock Market</h5>
+                                <p class="card-text">Conducting new ML methods on customer's proprietary data to improve returns. (under NDA)</p>
+                                <a href="projects/Poster.pdf#toolbar=0" class="btn btn-secondary">Poster</a>
+                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="data-analytics-projects" class="section py-5 gray-background">
+            <div class="container">
+                <h2 class="section-title">Data Analytics | Visualization Projects</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="images/projects/tuna.png" alt="Data Analytics Project 1" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="tags">
+                                        <span class="tag">Matplotlib</span>
+                                        <span class="tag">Altair</span>
+                                        <span class="tag">Plotly</span>
+                                        <span class="tag">Scikit-learn</span>
+                                    </div>
+                                    <h5 class="card-title">Tuna Economics and its Sustainability</h5>
+                                    <p class="card-text">Utilizing visualization library, Altair, to conduct exploratory data analysis on ICCAT tuna datasets to discuss the major problems on tuna catch.</p>
+                                    <a href="projects/Report.pdf#toolbar=0" class="btn btn-primary">See More</a>
+                                    <a href="https://github.com/Chienstartup/Tuna-Economics-and-its-Sustainability" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="images/projects/milestone2.png" alt="Data Analytics Project 2" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="tags">
+                                        <span class="tag">Matplotlib</span>
+                                        <span class="tag">Supervised</span>
+                                        <span class="tag">Unsupervised</span>
+                                    </div>
+                                    <h5 class="card-title">Better to Solve Consumers' Complaints</h5>
+                                    <p class="card-text">We aims to tackle the increase volume of complaints and the complexities involved
+                                        in addressing them within the finance area.</p>
+                                    <a href="projects/Milestone2.pdf#toolbar=0" class="btn btn-primary">See More</a>
+                                    <a href="https://github.com/f23-milestone2-team10/repo_cfpb" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="images/projects/dash.jpg" alt="Data Analytics Project 3" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="tags">
+                                        <span class="tag">PowerBI</span>
+                                        <span class="tag">Dashboard</span>
+                                        <span class="tag">Visualization</span>
+                                    </div>
+                                    <h5 class="card-title">PowerBI Dashboard for Sales</h5>
+                                    <p class="card-text">Utilizing PowerBI to conduct ETL India company's sales data and build dashboard to guide sales performance.</p>
+                                    <a href="projects/dashboard.pptx#toolbar=0" class="btn btn-primary">Dashboard</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="business-projects" class="section py-5">
+            <h2 class="section-title">Real-Life Business Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/projects/breit.png" class="card-img-top" alt="Market Entry Strategy">
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag">Marketing</span>
+                                    <span class="tag">Data Analytics</span>
+                                    <span class="tag">Web Scraping</span>
+                                    <span class="tag">Strategy</span>
+                                </div>
+                                <h5 class="card-title">Marketing Strategy with Data Analytics</h5>
+                                <p class="card-text">Utilizing web scraping and data analytics to help Breitling plan marketing strategy ahead for its new marketing campaign.</p>
+                                <a href="projects/breit.pdf#toolbar=0" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/projects/ed.png" class="card-img-top" alt="Supply Chain Optimization">
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag">Business Plan</span>
+                                    <span class="tag">Market Entry</span>
+                                    <span class="tag">Medical Device</span>
+                                    <span class="tag">Start-up</span>
+                                </div>
+                                <h5 class="card-title">Go-to-market Strategy</h5>
+                                <p class="card-text">Partnering with medical device start-up and help them select target market with potential and provide them with strategies.</p>
+                                <a href="projects/ED.pdf#toolbar=0" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/projects/lena.png" class="card-img-top" alt="Digital Transformation Initiative">
+                            <div class="card-body">
+                                <div class="tags">
+                                    <span class="tag">Business Plan</span>
+                                    <span class="tag">Market Selection</span>
+                                    <span class="tag">Medicine</span>
+                                </div>
+                                <h5 class="card-title">Business Plan for Selected SEA Country</h5>
+                                <p class="card-text">Establishing assessment score card for SEA countries and formulate country entering business plan.</p>
+                                <a href="projects/lena.pdf#toolbar=0" class="btn btn-primary">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="experiences" class="section py-5 gray-background">
+        <div class="container">
+            <h2 class="section-title">Experiences</h2>
+            <div class="experience-item">
+                <div class="experience-date">APR 2023 - MAR 2024</div>
+                <div class="experience-content">
+                    <h3>STANDARD CHEM. & PHARM CO., LTD., Taiwan</h3>
+                    <h3>Project Manager (Senior Specialist), International Business Development</h3>
+                    <p>• Represented STANDARD at overseas trade shows and engaged with potential clients to propose CMO, CDMO, 
+                        and product in-licensing collaborations. Converted leads into clients and signed NDAs/contracts for NCEs and generics in-licensing.</p>
+                    <p>• Conducted market research for Europe, USA, and China to gather insights and interpret patent protections to formulate product development strategies. 
+                        Convinced management team to adopt development plans for several potential candidates, 
+                        contributing to establishing future product lines in major markets.</p>
+                    <p>• Assisted in developing collaborative projects and tripartite agreements for China, Japan, and Taiwan, 
+                        formulating business terms, and reviewing confidentiality agreements, 
+                        term sheets, and supply contracts to safeguard the company's rights and obligations.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">SEP 2021 - MAR 2023</div>
+                <div class="experience-content">
+                    <h3>TTY BIOPHARM COMPANY LIMITED, Taiwan</h3>
+                    <h3>Senior Specialist, International Business Development</h3>
+                    <p>• Identified business opportunities and facilitated stakeholder dialogues, developing market models for Southeast Asia using epidemiology data, 
+                        clinical studies, IQVIA database, and local health system insights. Conducted financial analyses to create business proposals, 
+                        successfully securing approval from the chairman for two significant initiatives.</p>
+                    <p>• As a direct report to the CEO, managing the Vietnam Representative Office, overseeing product supply, production, drug license maintenance, 
+                        contracts with suppliers and distributors, and financial operations. 
+                        Collaborated with local product managers for in-depth insights into the Vietnamese biopharmaceutical industry, 
+                        shaping future business strategies and managing cross-national exchange program projects.</p>
+                    <p>• Delivered comprehensive product and disease training to sales teams in Singapore, Malaysia, and the Philippines, 
+                        consistently updating training materials to align with the latest treatment guidelines for conditions such as multiple myeloma and acute myeloid leukemia.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">AUG 2020 - DEC 2020</div>
+                <div class="experience-content">
+                    <h3>GUARDANT HEALTH AMEA, Singapore</h3>
+                    <h3>Full-time MBA Marketing Intern, Marketing Team</h3>
+                    <p>• Enhanced brand presence in 41 countries across AMEA by spearheading digital initiatives, 
+                        transforming engagement channels through educational webinars and virtual medical conferences, 
+                        effectively penetrating new geographic markets, and converting leads into customers.</p>
+                    <p>• Conducted in-depth research on Next Generation Sequencing (NGS) applications in various solid tumors, 
+                        creating and publishing three specialized core sales aids (CSAs) for lung, colorectal, 
+                        and breast cancers in collaboration with medical teams. </p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">JAN 2015 - APR 2018</div>
+                <div class="experience-content">
+                    <h3>PEI-LI PHARMACEUTICAL, Taiwan</h3>
+                    <h3>Associate Product Manager (Medical Pharmacist), Marketing Department</h3>
+                    <p>• Negotiated exclusive cooperation agreements with Sun Pharma and Dr. Reddy in India, 
+                        securing deals worth $4 million and $15 million; partnered with NIPRO Pharma in Japan, 
+                        facilitating the licensing of cancer treatment products, culminating in Taiwan regulatory approval in 2018 with an estimated deal value of $1.5 million.</p>
+                    <p>• Developed and implemented effective sales strategies, including penetration pricing and medical conference sponsorships, enhancing brand visibility, 
+                        and driving over $2.5 million in annual revenue from 40+ key account hospitals; crafted and executed a strategic product launch plan, 
+                        significantly raising brand awareness and securing key accounts, leading to a 213% sales volume increase in the second year, surpassing initial targets. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="skills" class="section py-5">
+            <h2 class="section-title">Skills and Techniques</h2>
+            <div class="skills-container">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">SQL(PostgrelSQL)</span>
+              <span class="skill-item">Numpy</span>
+              <span class="skill-item">Pandas</span>
+              <span class="skill-item">Matplotlib</span>
+              <span class="skill-item">Seaborn</span>
+              <span class="skill-item">Altair</span>
+              <span class="skill-item">Pytorch</span>
+              <span class="skill-item">Scikit-learn</span>
+              <span class="skill-item">GBM(XGB,LGM,CAT)</span>
+              <span class="skill-item">CNNs</span>
+              <span class="skill-item">LLMs fine-tuning</span>
+              <span class="skill-item">Transformer</span>
+              <span class="skill-item">qLora</span>
+              <span class="skill-item">Adaptor</span>
+              <span class="skill-item">AI prompting</span>
+            </div>
+          </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-4">
+                    <h5 class="footer-title">Contact Me</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div> -->
+                <!-- <div class="col-md-4">
+                    空白列 -->
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Connect With Me</h5>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yihsin-chien/" class="social-icon" id="linkedin"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://www.kaggle.com/yihsinchien" class="social-icon" id="kaggle"><img src="icons/kaggle.png" alt="Kaggle"></a>
+                        <a href="https://github.com/Chienstartup" class="social-icon" id="github"><img src="icons/github.png" alt="GitHub"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Yi-Hsin Chien. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Modal for enlarged images -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" class="img-fluid" id="modalImage">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Image enlargement functionality
+    $(document).ready(function() {
+        $('.card-img-top').on('click', function() {
+            var imgSrc = $(this).attr('src');
+            $('#modalImage').attr('src', imgSrc);
+            $('#imageModal').modal('show');
+        });
+    });
+</script>
+</body>
+</html>
